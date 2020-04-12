@@ -1,0 +1,49 @@
+$contribute-btn-txt-color: $black;
+$contribute-btn-bg-color: $white;
+
+.o-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+
+  &__copyright {
+    color: lightcoral;
+
+    font-family: "Lucida Console", Courier, monospace;
+  }
+}
+
+.m-contributeBtn {
+  padding: 10px 15px;
+  margin-top: $sm;
+
+  background-color: $contribute-btn-bg-color;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+  animation: blink 2s infinite;
+
+  &:focus,
+  &:active,
+  &:visited {
+    color: $contribute-btn-txt-color;
+  }
+}
+
+@keyframes blink {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+  }
+}

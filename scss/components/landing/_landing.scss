@@ -1,0 +1,40 @@
+$landing-description-text-color: $spicy-pink;
+
+.o-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+
+  margin: 50px auto;
+  margin-top: 100px;
+
+
+  &__title {
+    margin-top: $xxl;
+
+    text-transform: capitalize;
+  }
+
+  &__description {
+    padding: $lg;
+    margin-top: $lg;
+
+    color: $landing-description-text-color;
+
+    font-weight: normal;
+    text-align: center;
+
+    @include font-size(20px, 30px);
+
+    &:first-letter {
+      font-weight: $bolder;
+    }
+  }
+
+  &__logo {
+    max-height: 200px;
+  }
+}
