@@ -9,6 +9,10 @@ $contribute-btn-bg-color: $white;
 
   margin: 0 auto;
 
+  @include media-mobile {
+    margin-top: -40px;
+  }
+
   &__copyright {
     color: lightcoral;
 

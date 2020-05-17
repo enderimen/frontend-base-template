@@ -5,7 +5,6 @@ $landing-description-text-color: $spicy-pink;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
   height: auto;
 
   margin: 50px auto;
@@ -28,6 +27,10 @@ $landing-description-text-color: $spicy-pink;
     text-align: center;
 
     @include font-size(20px, 30px);
+    @include media-mobile {
+      font-size: 1em;
+      text-align: justify;
+    }
 
     &:first-letter {
       font-weight: $bolder;

@@ -4,4 +4,11 @@
 
   padding: 0 $lg;
   margin: 0 auto;
+
+  @include media-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
