@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp -p $PORT"
   },
   "author": "Ender İMEN",
   "license": "MIT",
@@ -18,6 +19,7 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-minify": "^3.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",

@@ -10,6 +10,9 @@ const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const replace = require("gulp-replace");
 const minify = require('gulp-minify');
+var deploy = require('gulp-gh-pages');
+var gulp = require('gulp');
+
 
 // File paths
 const files = {
@@ -99,6 +102,14 @@ function watchTask() {
     series(parallel(scssTask, copyHtml, jsTask), repHtmlUrl, repJsUrl, repCssUrl)
   );
 }
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy());
+});
 
 // Export the default Gulp task so it can be run
 // Runs the scss and js tasks simultaneously
