@@ -3,3 +3,9 @@ This template is for you if you want a quick start to your frontend related proj
 
 | ![Frontend Base Template Gif](https://github.com/enderimen/frontend-base-template/blob/master/assets/images/frontend-base-template.gif) |
 | :--: | 
+   
+  NOTE: By default, "npm install" will install all modules listed as dependencies in package.json.
+  
+  ## Run
+  
+    gulp
